@@ -273,9 +273,7 @@
       "cancelled": "Cancelled",
       "set": "Set status:",
       "setBy": "set by",
-      "none": "None",
-      "marked": "Marked",
-      "unmarked": "Unmarked"
+      "none": "None"
     },
     "measurementOverlay": {
       "scale": "Scale Ratio",

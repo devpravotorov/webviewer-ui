@@ -149,22 +149,6 @@ const NoteState = ({ annotation, isSelected }) => {
                 <Icon glyph="icon-annotation-status-none" />
                 {t('option.state.none')}
               </div>
-              <div
-                data-element="notePopupStateMarked"
-                className="option"
-                onClick={() => handleStateUpdate('Marked')}
-              >
-                <Icon glyph="icon-annotation-status-marked" />
-                {t('option.state.marked')}
-              </div>
-              <div
-                data-element="notePopupStateUnmarked"
-                className="option"
-                onClick={() => handleStateUpdate('Unmarked')}
-              >
-                <Icon glyph="icon-annotation-status-unmarked" />
-                {t('option.state.unmarked')}
-              </div>
             </div>
           )}
         </div>
