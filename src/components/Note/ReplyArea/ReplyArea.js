@@ -83,7 +83,7 @@ const ReplyArea = ({ annotation, isUnread, onPendingReplyChange }) => {
   const postReply = e => {
     // prevent the textarea from blurring out
     e.preventDefault();
-    const replyText = pendingReplyMap[annotation.Id]
+    const replyText = pendingReplyMap[annotation.Id];
 
     if (!replyText) {
       return;
@@ -123,10 +123,10 @@ const ReplyArea = ({ annotation, isUnread, onPendingReplyChange }) => {
     unread: isUnread,
   });
 
-  const handleNoteTextareaChange = (value) => {
+  const handleNoteTextareaChange = value => {
     setPendingReply(value, annotation.Id);
     onPendingReplyChange();
-  }
+  };
   return ifReplyNotAllowed ? null : (
     <div
       className={replyAreaClass}
